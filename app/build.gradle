@@ -38,4 +38,9 @@ dependencies {
     // added by Jay
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 
+    // added by badawiiz
+    androidTestImplementation "androidx.arch.core:core-testing:2.0.0"
+    testImplementation 'androidx.arch.core:core-testing:2.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.1'
 }

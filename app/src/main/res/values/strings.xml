@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">LoginCabin</string>
+    <string name="app_name">Log Cabin</string>
+    <string name="logo_description">Cabin Logo</string>
+    <string name="recently_used"><u>RECENTLY USED</u></string>
+    <string name="my_apps"><u>MY APPS</u></string>
 </resources>
+

@@ -14,34 +14,36 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="185dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/logo_description"
+            app:srcCompat="@drawable/cabin" />
+
+        <Button
+            android:id="@+id/user_icon"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_person" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="-30dp"
         android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="185dp"
-                android:layout_height="55dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="100dp"
-                android:contentDescription="@string/logo_description"
-                app:srcCompat="@drawable/cabin" />
-
-            <Button
-                android:id="@+id/user_icon"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="40dp"
-                android:background="@drawable/ic_person" />
-
-        </LinearLayout>
 
     </LinearLayout>
 
@@ -116,108 +118,94 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="350dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/my_apps"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="400dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/twitter_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/twitter" />
+
+        <Button
+            android:id="@+id/usbank_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/usbank" />
+
+        <Button
+            android:id="@+id/university_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/university" />
+
+        <Button
+            android:id="@+id/google_dup_btn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/google_white" />
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="320dp"
-        android:orientation="vertical">
+        android:layout_height="100dp"
+        android:layout_marginTop="500dp"
+        android:gravity="top"
+        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/my_apps"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="5dp"
-            android:fontFamily="sans-serif-medium"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:typeface="normal"
-            tools:text="@string/my_apps" />
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/git" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/pinterst" />
 
-            <Button
-                android:id="@+id/twitter_btn"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/twitter" />
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/facebook" />
 
-            <Button
-                android:id="@+id/usbank_btn"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/usbank" />
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/twitter" />
 
-            <Button
-                android:id="@+id/university_btn"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/university" />
-
-            <Button
-                android:id="@+id/google_dup_btn"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/google_white" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginBottom="150dp"
-            android:gravity="top"
-            android:orientation="horizontal">
-
-            <Button
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/git" />
-
-            <Button
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/pinterst" />
-
-            <Button
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/facebook" />
-
-            <Button
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_marginEnd="10dp"
-                android:background="@drawable/twitter" />
-
-        </LinearLayout>
-
-        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

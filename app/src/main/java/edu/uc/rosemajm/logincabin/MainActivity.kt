@@ -1,15 +1,10 @@
 package edu.uc.rosemajm.logincabin
 
-import android.app.ActionBar
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
-import android.text.Editable
-import android.text.TextUtils
-import android.text.TextWatcher
-import android.view.View
 import android.widget.*
-import androidx.core.view.marginTop
+import edu.uc.rosemajm.logincabin.ui.main.AccountSignUp
 import edu.uc.rosemajm.logincabin.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +21,26 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
         }
+
+            //add reference to btn
+            val  addAccount_btn = findViewById (R.id.addAccount_btn) as Button
+            // add onclicklistener to button
+            addAccount_btn.setOnClickListener{
+                openActivity2()
+                Toast.makeText(this@MainActivity, "which account will we add", Toast.LENGTH_SHORT).show()
+
+
+            }
+
+
+        }
+
+     fun openActivity2() {
+        val intent = Intent(this, AccountSignUp::class.java)
+        startActivity(intent);
     }
 
-}
+
+
+    }
+

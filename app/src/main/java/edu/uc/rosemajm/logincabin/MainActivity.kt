@@ -28,4 +28,34 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onPause() {
+        super.onPause()
+    }
+
+    override fun onResume() {
+        super.onResume()
+    }
+
+    override fun onStop() {
+        super.onStop()
+
+        // save any data in progress
+
+        // make any updates
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+    }
+
+    override fun onStart() {
+        super.onStart()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+    }
+
+
+
 }

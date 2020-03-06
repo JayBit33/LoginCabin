@@ -24,9 +24,9 @@ class ApplicationsService {
                 _applications.value = response.body()
             }
 
-            override fun onFailure(call: Call<ArrayList<Applications>>, t: Throwable) {
-                val j = 1+1
-                val i = 1 + 1
+            override fun onFailure(call: Call<ArrayList<Applications>>, t: Throwable)
+            {
+                //TODO finish onFailure function
             }
 
         })

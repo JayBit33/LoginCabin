@@ -29,6 +29,7 @@ class Accounts {
             if (accounts.contains(userName)){
                 accounts.replaceAll { newUserName -> userName}
                 accounts.replaceAll { newPassword -> password}
-            }    }
+            }
+    }
 
 }

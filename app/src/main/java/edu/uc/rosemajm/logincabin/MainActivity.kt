@@ -1,32 +1,29 @@
 package edu.uc.rosemajm.logincabin
 
-import android.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
-import android.text.Editable
-import android.text.TextUtils
-import android.text.TextWatcher
-import android.view.View
-import android.widget.*
-import androidx.core.view.marginTop
+import android.widget.Button
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import edu.uc.rosemajm.logincabin.ui.main.MainFragment
+import kotlinx.android.synthetic.main.main_activity.view.*
 
 class MainActivity : AppCompatActivity() {
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
 
-
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
         }
-    }
+
+        // Create fragment transaction to open account page
+//        FragmentTransaction fragmentTransaction = getSupportFragmentManager ().beginTransaction()
+//        fragmentTransaction.add(R.id.account_activity, new MainFragment)
 
 //    override fun onPause() {
 //        super.onPause()
@@ -57,5 +54,5 @@ class MainActivity : AppCompatActivity() {
 //    }
 
 
-
+    }
 }

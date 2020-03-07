@@ -19,10 +19,10 @@
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="185dp"
+            android:layout_width="85dp"
             android:layout_height="55dp"
             android:layout_gravity="center"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="160dp"
             android:layout_marginTop="-10dp"
             android:layout_marginBottom="15dp"
             android:contentDescription="@string/logo_description"
@@ -33,7 +33,7 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="100dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/ic_person" />
 
@@ -78,7 +78,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/facebook"
 
             />
@@ -88,7 +88,7 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/google_white" />
 
         <Button
@@ -96,7 +96,7 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
 
             android:background="@drawable/git" />
 
@@ -105,7 +105,7 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/pinterst" />
 
     </LinearLayout>
@@ -133,7 +133,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/twitter" />
 
         <Button
@@ -141,15 +141,15 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/usbank" />
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/usbank"/>
 
         <Button
             android:id="@+id/university_btn"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/university" />
 
         <Button
@@ -157,7 +157,7 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/google_white" />
 
     </LinearLayout>
@@ -173,28 +173,28 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginStart="20dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/git" />
 
         <Button
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/pinterst" />
 
         <Button
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/facebook" />
 
         <Button
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="15dp"
             android:background="@drawable/twitter" />
 
     </LinearLayout>

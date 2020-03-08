@@ -1,14 +1,16 @@
 package edu.uc.rosemajm.logincabin.dto
 
+// Account info
+
 class User(username: String, password:String) {
-    var loginName = username
-    var loginPassword = password
+    private var loginName = username
+    private var loginPassword = password
 
     var accounts = ArrayList<Account>()
 
     // Create and add a new account to the users list of saved accounts
-    fun addUserAccount(accountName:String, userName: String, password: String) {
-        val account = Account(accountName,userName,password)
+    fun addUserAccount( userName: String, password: String, email: String) {
+        val account = Account(userName,password, email)
         // Add new account to list of user accounts
         accounts.add(account)
     }

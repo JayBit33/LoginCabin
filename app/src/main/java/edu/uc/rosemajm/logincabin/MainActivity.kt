@@ -1,15 +1,8 @@
 package edu.uc.rosemajm.logincabin
 
-import android.app.ActionBar
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
-import android.text.Editable
-import android.text.TextUtils
-import android.text.TextWatcher
-import android.view.View
-import android.widget.*
-import androidx.core.view.marginTop
+import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import edu.uc.rosemajm.logincabin.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +20,14 @@ class MainActivity : AppCompatActivity() {
                 .commitNow()
         }
     }
-
+    override fun onOptionsItemSelected(item: MenuItem): Boolean { // Handle action bar item clicks here. The action bar will
+// automatically handle clicks on the Home/Up button, so long
+// as you specify a parent activity in AndroidManifest.xml.
+        val id = item.itemId
+        return if (id == R.id.addAccount) { //Corrected the spelling for account here from the layout
+            true
+        } else super.onOptionsItemSelected(item)
+    }
 //    override fun onPause() {
 //        super.onPause()
 //    }

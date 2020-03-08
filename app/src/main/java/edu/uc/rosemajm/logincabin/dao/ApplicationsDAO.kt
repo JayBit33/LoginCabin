@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface ApplicationsDAO {
 
-    // No link after @GET becasue we have no link for the json data yet.
+    // No link after @GET because we have no link for the json data yet.
 
     @GET("")
     fun getAllApplications (): Call<ArrayList<Applications>>

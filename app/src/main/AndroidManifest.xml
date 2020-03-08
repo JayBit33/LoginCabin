@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="edu.uc.rosemajm.logincabin">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,11 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AccountActivity"></activity>
+        <activity android:name=".AccountActivity"></activity>  // surpasses the duplicate activity for now, may want to add it to the activity below or remove it
         <activity
-            android:name=".account_activity"
+            android:name="AccountActivity"
             android:label="@string/title_activity_account_activity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="DuplicateActivity" />
         <activity android:name=".MainActivity">
 
             <!-- Following tells android to use this Activity as the Main activity to be launched when app launches -->

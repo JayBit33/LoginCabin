@@ -1,10 +1,14 @@
 package edu.uc.rosemajm.logincabin.dto
 
-class Account(_accountName: String, _username: String, _password: String) {
+// This class will help update the account info
 
-    var accountName: String = _accountName
+class Account(_username: String, _password: String, _email: String) {
+
+    // Removed unused account name
+
     var username : String = _username
     var password : String = _password
+    var email : String = _email
 
 
     fun updateUsername(newUsername: String) {
@@ -13,5 +17,9 @@ class Account(_accountName: String, _username: String, _password: String) {
 
     fun updatePassword(newPassword: String) {
         password = newPassword
+    }
+
+    fun updateEmail(newEmail: String) {
+        email = newEmail
     }
 }

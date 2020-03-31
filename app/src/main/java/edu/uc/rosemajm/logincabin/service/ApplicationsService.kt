@@ -1,7 +1,8 @@
-package edu.uc.rosemajm.logincabin.dto
+package edu.uc.rosemajm.logincabin.service
 
 import androidx.lifecycle.MutableLiveData
 import edu.uc.rosemajm.logincabin.dao.ApplicationsDAO
+import edu.uc.rosemajm.logincabin.dto.Applications
 import edu.uc.rosemajm.logincabin.ui.main.RetrofitClientInstance
 import retrofit2.Call
 import retrofit2.Callback

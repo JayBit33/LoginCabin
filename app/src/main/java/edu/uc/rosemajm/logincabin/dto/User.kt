@@ -1,8 +1,8 @@
 package edu.uc.rosemajm.logincabin.dto
 
 class User(username: String, password:String) {
-    var loginName = username
-    var loginPassword = password
+    private var loginName = username
+    private var loginPassword = password
 
     var accounts = ArrayList<Account>()
 

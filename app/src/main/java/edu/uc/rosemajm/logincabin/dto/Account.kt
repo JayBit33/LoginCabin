@@ -1,6 +1,7 @@
 package edu.uc.rosemajm.logincabin.dto
 
-class Account(_accountName: String, _username: String, _password: String) {
+class Account(_accountName: String, _username: String, _password: String)
+{
 
     var accountName: String = _accountName
     var username : String = _username
@@ -13,5 +14,10 @@ class Account(_accountName: String, _username: String, _password: String) {
 
     fun updatePassword(newPassword: String) {
         password = newPassword
+    }
+
+    fun updateAccountName(newAccountName: String)
+    {
+        accountName = newAccountName
     }
 }

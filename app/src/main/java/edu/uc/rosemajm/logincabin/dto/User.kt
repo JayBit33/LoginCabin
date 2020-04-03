@@ -4,6 +4,8 @@ class User(username: String, password:String) {
     var loginName = username
     var loginPassword = password
 
+
+
     var accounts = ArrayList<Account>()
 
     // Create and add a new account to the users list of saved accounts
@@ -20,17 +22,25 @@ class User(username: String, password:String) {
         }
     }
 
+    fun updateUsername(newUsername: String) {
+        loginName = newUsername
+    }
+
+    fun updatePassword(newPassword: String) {
+        loginPassword = newPassword
+    }
+
     // Update an account username
     fun updateAccountUsername(account: Account, newUsername: String) {
         if (accounts.contains(account)) {
-            account.updateUsername(newUsername)
+            updateUsername(newUsername)
         }
     }
 
     // Update an account password
     fun updateAccountPassword(account: Account, newPassword: String) {
         if (accounts.contains(account)) {
-            account.updateUsername(newPassword)
+            updateUsername(newPassword)
         }
     }
 

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "299911479613",
+    "firebase_url": "https://log-cabin-2cff1.firebaseio.com",
+    "project_id": "log-cabin-2cff1",
+    "storage_bucket": "log-cabin-2cff1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299911479613:android:14796ba99af6ba25884554",
+        "android_client_info": {
+          "package_name": "edu.uc.rosemajm.logincabin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299911479613-30mb3q6bgmcn8sfe99f1lo04oej72j15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQzWmVe8Vwhd-cMi9B_CY7HuF7JRpZM6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299911479613-30mb3q6bgmcn8sfe99f1lo04oej72j15.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

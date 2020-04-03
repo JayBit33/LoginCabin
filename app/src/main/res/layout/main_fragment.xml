@@ -7,6 +7,200 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.MainFragment">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="185dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="@string/logo_description"
+                app:srcCompat="@drawable/cabin" />
+
+            <Button
+                android:id="@+id/user_icon"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_person" />
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="5dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recentlyViewed_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/recently_used"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/my_apps"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+    <Button
+        android:id="@+id/addAcciount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:text="@string/add_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/twitter"
+        app:layout_constraintEnd_toStartOf="@+id/usbank_btn"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <Button
+        android:id="@+id/git_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:background="@drawable/git"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/git"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <Button
+        android:id="@+id/facebook_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+
+        android:background="@drawable/facebook"
+        app:layout_constraintEnd_toStartOf="@+id/university_btn"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <Button
+        android:id="@+id/university_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/university"
+        app:layout_constraintEnd_toStartOf="@+id/google_btn"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <Button
+        android:id="@+id/google_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/google_white"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <Button
+        android:id="@+id/button6"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/pinterst"
+        tools:layout_editor_absoluteX="295dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+    <Button
+        android:id="@+id/usbank_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/usbank"
+        app:layout_constraintEnd_toStartOf="@+id/git_btn"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/pinterst"
+        app:layout_constraintBottom_toTopOf="@+id/addAcciount"
+        tools:layout_editor_absoluteX="297dp" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/facebook"
+        app:layout_constraintBottom_toTopOf="@+id/addAcciount"
+        app:layout_constraintEnd_toStartOf="@+id/twitter_btn" />
+
+    <Button
+        android:id="@+id/twitter_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/twitter"
+        app:layout_constraintBottom_toTopOf="@+id/addAcciount"
+        app:layout_constraintEnd_toStartOf="@+id/google_dup_btn" />
+
+    <Button
+        android:id="@+id/google_dup_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/google_white"
+        app:layout_constraintBottom_toTopOf="@+id/addAcciount"
+        app:layout_constraintEnd_toStartOf="@+id/button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

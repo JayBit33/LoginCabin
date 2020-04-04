@@ -1,22 +1,22 @@
 package edu.uc.rosemajm.logincabin.dto
 
-class User(username: String, password:String) {
+class UserDTO(username: String, password:String) {
     var loginName = username
     var loginPassword = password
 
 
 
-    var accounts = ArrayList<Account>()
+    var accounts = ArrayList<AccountDTO>()
 
     // Create and add a new account to the users list of saved accounts
     fun addUserAccount(accountName:String, userName: String, password: String) {
-        val account = Account(accountName,userName,password)
+        val account = AccountDTO(accountName,userName,password)
         // Add new account to list of user accounts
         accounts.add(account)
     }
 
     // a function to delete an existing account from the arraylist
-    fun deleteUserAccount(account: Account) {
+    fun deleteUserAccount(account: AccountDTO) {
         if (accounts.contains(account)){
             accounts.remove(account)
         }
@@ -31,14 +31,14 @@ class User(username: String, password:String) {
     }
 
     // Update an account username
-    fun updateAccountUsername(account: Account, newUsername: String) {
+    fun updateAccountUsername(account: AccountDTO, newUsername: String) {
         if (accounts.contains(account)) {
             updateUsername(newUsername)
         }
     }
 
     // Update an account password
-    fun updateAccountPassword(account: Account, newPassword: String) {
+    fun updateAccountPassword(account: AccountDTO, newPassword: String) {
         if (accounts.contains(account)) {
             updateUsername(newPassword)
         }

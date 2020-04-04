@@ -2,7 +2,7 @@ package edu.uc.rosemajm.logincabin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import edu.uc.rosemajm.logincabin.dto.Account
+import edu.uc.rosemajm.logincabin.dto.AccountDTO
 
 class AccountActivity : AppCompatActivity() {
 
@@ -12,7 +12,7 @@ class AccountActivity : AppCompatActivity() {
     }
 
     private fun saveAccount(){
-        var account = Account().apply {
+        var account = AccountDTO().apply {
             //  username = lblUsername.text.toString()
             //  password = lblPassword.text.toString()
 

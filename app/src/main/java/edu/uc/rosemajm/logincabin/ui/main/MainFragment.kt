@@ -13,7 +13,6 @@ import com.firebase.ui.auth.AuthUI
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import edu.uc.rosemajm.logincabin.R
-import edu.uc.rosemajm.logincabin.dto.Account
 
 class MainFragment : Fragment() {
     private lateinit var viewModel: MainViewModel

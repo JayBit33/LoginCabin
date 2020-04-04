@@ -13,11 +13,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".AccountActivity"></activity>
         <activity
-            android:name=".account_activity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_account_activity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity">
-
+            android:theme="@style/AppTheme.NoActionBar">
             <!-- Following tells android to use this Activity as the Main activity to be launched when app launches -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

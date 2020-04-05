@@ -10,7 +10,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="140dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/logo"
@@ -58,12 +59,14 @@
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/twitter_btn"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="386dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
+        android:layout_height="30dp"
         android:layout_marginTop="100dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/my_apps"
@@ -73,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/appName" />
 
     <Button
-        android:id="@+id/addAcciount"
+        android:id="@+id/addAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="160dp"
@@ -89,6 +92,7 @@
         android:layout_marginEnd="10dp"
         android:background="@drawable/twitter"
         app:layout_constraintEnd_toStartOf="@+id/usbank_btn"
+        app:layout_constraintTop_toTopOf="@+id/git_btn"
         tools:layout_editor_absoluteY="280dp" />
 
     <Button
@@ -96,7 +100,8 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="80dp"
         android:layout_height="80dp"
-
+        app:layout_constraintTop_toTopOf="@+id/usbank_btn"
+        app:layout_constraintEnd_toEndOf="@id/button"
         android:background="@drawable/git"
         tools:layout_editor_absoluteX="297dp"
         tools:layout_editor_absoluteY="280dp" />
@@ -107,6 +112,7 @@
         android:layout_height="80dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/git"
+        app:layout_constraintTop_toTopOf="@+id/usbank_btn"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         tools:layout_editor_absoluteY="280dp" />
 
@@ -118,6 +124,7 @@
         android:layout_marginEnd="10dp"
 
         android:background="@drawable/facebook"
+        app:layout_constraintTop_toTopOf="@+id/university_btn"
         app:layout_constraintEnd_toStartOf="@+id/university_btn"
         tools:layout_editor_absoluteY="180dp" />
 
@@ -128,6 +135,7 @@
         android:layout_height="80dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/university"
+        app:layout_constraintTop_toTopOf="@+id/google_btn"
         app:layout_constraintEnd_toStartOf="@+id/google_btn"
         tools:layout_editor_absoluteY="182dp" />
 
@@ -138,6 +146,7 @@
         android:layout_height="80dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/google_white"
+        app:layout_constraintTop_toTopOf="@+id/button6"
         app:layout_constraintEnd_toStartOf="@+id/button6"
         tools:layout_editor_absoluteY="182dp" />
 
@@ -147,6 +156,8 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/pinterst"
+        app:layout_constraintBottom_toTopOf="@+id/usbank_btn"
+        app:layout_constraintEnd_toEndOf="@+id/git_btn"
         tools:layout_editor_absoluteX="295dp"
         tools:layout_editor_absoluteY="182dp" />
 
@@ -157,6 +168,7 @@
         android:layout_height="80dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/usbank"
+        app:layout_constraintBottom_toTopOf="@id/recentlyViewed_Text"
         app:layout_constraintEnd_toStartOf="@+id/git_btn"
         tools:layout_editor_absoluteY="280dp" />
 
@@ -166,8 +178,10 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginBottom="60dp"
+        android:layout_marginRight="40dp"
         android:background="@drawable/pinterst"
-        app:layout_constraintBottom_toTopOf="@+id/addAcciount"
+        app:layout_constraintEnd_toEndOf="@id/recentlyViewed_Text"
+        app:layout_constraintBottom_toTopOf="@+id/addAccount"
         tools:layout_editor_absoluteX="297dp" />
 
     <Button
@@ -177,7 +191,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/facebook"
-        app:layout_constraintBottom_toTopOf="@+id/addAcciount"
+        app:layout_constraintBottom_toTopOf="@+id/addAccount"
         app:layout_constraintEnd_toStartOf="@+id/twitter_btn" />
 
     <Button
@@ -188,7 +202,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/twitter"
-        app:layout_constraintBottom_toTopOf="@+id/addAcciount"
+        app:layout_constraintBottom_toTopOf="@+id/addAccount"
         app:layout_constraintEnd_toStartOf="@+id/google_dup_btn" />
 
     <Button
@@ -199,7 +213,7 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/google_white"
-        app:layout_constraintBottom_toTopOf="@+id/addAcciount"
+        app:layout_constraintBottom_toTopOf="@+id/addAccount"
         app:layout_constraintEnd_toStartOf="@+id/button" />
 
 

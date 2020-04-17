@@ -29,7 +29,7 @@
             app:srcCompat="@drawable/cabin" />
 
         <Button
-            android:id="@+id/user_icon"
+            android:id="@+id/btnLogon"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="35dp"
             android:layout_height="35dp"

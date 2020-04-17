@@ -1,25 +1,41 @@
 package edu.uc.rosemajm.logincabin
 
-import android.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
-import android.text.Editable
-import android.text.TextUtils
-import android.text.TextWatcher
-import android.view.View
-import android.widget.*
-import androidx.core.view.marginTop
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import edu.uc.rosemajm.logincabin.ui.main.MainFragment
+import edu.uc.rosemajm.logincabin.ui.main.MainViewModel
+
+
 
 class MainActivity : AppCompatActivity() {
 
-
+    private lateinit var accountFragment: AccountFragment
+    private lateinit var mainFragment: MainFragment
+    private lateinit var activeFragment: Fragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
+        accountFragment = AccountFragment.newInstance()
+        mainFragment = MainFragment.newInstance()
+        val viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, mainFragment)
+                .commitNow()
+            activeFragment = mainFragment
+        }
 
+    }
+
+   public fun mainScreen() {
+        if (activeFragment == accountFragment) {
+            supportFragmentManager.beginTransaction().replace(R.id.container, mainFragment)
+                .commitNow()
+            activeFragment = mainFragment
+        }
     }
 
 //    override fun onPause() {

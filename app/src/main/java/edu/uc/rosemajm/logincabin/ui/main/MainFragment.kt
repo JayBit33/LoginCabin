@@ -8,14 +8,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.Observer
 import com.firebase.ui.auth.AuthUI
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import edu.uc.rosemajm.logincabin.R
-import edu.uc.rosemajm.logincabin.dto.Account
+import kotlinx.android.synthetic.main.main_fragment.*
 
-class MainFragment : Fragment() {
+open class MainFragment : Fragment() {
     private lateinit var viewModel: MainViewModel
     private val AUTH_REQUEST_CODE = 2000
     private var user : FirebaseUser? = null
@@ -30,13 +29,14 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
-        viewModel.applications.observe(this, Observer {
-         // TODO: finish the viewmodel for the applications
-        })
+
+        btnLogon.setOnClickListener {
+            logon()
+        }
     }
 
 
-    private fun logon() {
+    fun logon() {
         var providers = arrayListOf(
             AuthUI.IdpConfig.EmailBuilder().build()
         )

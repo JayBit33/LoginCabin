@@ -35,13 +35,13 @@ class DisplayAccount : Fragment() {
         }
     }
 
-    override fun onCreateView(
+  /*  override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_display_account, container, false)
-    }
+        return inflater.inflate(R.layout.displayAccount_fragment, container, false)
+    }*/
 
     // TODO: Rename method, update argument and hook method into UI event
     fun onButtonPressed(uri: Uri) {

@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AccountActivity"></activity>
+        <activity android:name=".AccountFragment"></activity>
         <activity
             android:name=".account_activity"
             android:label="@string/title_activity_account_activity"
